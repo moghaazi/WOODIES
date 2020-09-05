@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["module","hot","accept"],"mappings":";AACIA,OAAOC,KACTD,OAAOC,IAAIC","file":"main.0aa14a29.js","sourceRoot":"../src","sourcesContent":["// ---------------- HMR -------------------------------\nif (module.hot) {\n  module.hot.accept()\n}\n"]}
