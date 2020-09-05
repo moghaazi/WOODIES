@@ -1,0 +1,102 @@
+@import './components/headtext'; // headtext
+
+.testimony {
+  margin-bottom: 20rem;
+
+  // Title
+  .title {
+    @extend %headtext;
+
+    h1 {
+      &::before {
+        width: 25rem;
+        right: -27rem;
+
+        // lg 992px
+        @media (max-width: 992px) {
+          width: 0.3rem;
+          right: 12rem;
+        }
+      }
+
+      &::after {
+        content: 'TESTIMONY';
+      }
+    }
+  }
+
+  // Grid
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    // lg 992px
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 55rem;
+      place-items: center;
+    }
+
+    // md 768px
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    // Testimony Box
+    .testimony-box {
+      border-radius: 0 15rem 0 15rem;
+      width: 28rem;
+      height: 40rem;
+    }
+
+    // Testimony Slider
+    .testimony-slider {
+      border-radius: 0 12rem 0 12rem;
+      padding: 8rem 4rem;
+      border: 1px solid #a8dcec;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
+      align-self: baseline;
+
+      // // lg 992px
+      // @media (max-width: 992px) {
+      //   align-self: center;
+      // }
+
+      .stars {
+        margin-bottom: 4rem;
+      }
+
+      h1 {
+        font: bold 1.4rem 'Nunito', sans-serif;
+        columns: #3e3f43;
+        width: 352px;
+        margin-bottom: 4rem;
+      }
+
+      // Person
+      .person {
+        display: flex;
+
+        .img-box {
+          border-radius: 50%;
+          width: 6rem;
+          height: 4rem;
+
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .text {
+          align-self: center;
+          width: 150px;
+          font: bold 1.2rem 'Nunito', sans-serif;
+          color: #afafaf;
+        }
+      }
+    }
+  }
+}

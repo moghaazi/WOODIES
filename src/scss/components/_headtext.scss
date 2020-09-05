@@ -1,0 +1,57 @@
+%headtext {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rem;
+  transform: translateX(6rem);
+
+  // lg 992px
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font: bold 3.6rem 'Nunito', sans-serif;
+    color: #3e3f43;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      // right: -31.5rem;
+      top: 2rem;
+      height: 0.3rem;
+      // width: 30rem;
+      background-color: #777;
+      border-radius: 5rem;
+
+      // lg
+      @media (max-width: 992px) {
+        right: 10.5rem;
+        top: 6rem;
+        height: 30rem;
+        width: 0.3rem;
+      }
+    }
+
+    &::after {
+      // content: 'ABOUT US';
+      position: absolute;
+      right: -69.5rem;
+      top: -3rem;
+      font: bold 7.2rem 'Nunito', sans-serif;
+      color: #2222222c;
+
+      // lg 992px
+      @media (max-width: 992px) {
+        right: -3.5rem;
+        top: 36rem;
+      }
+    }
+  }
+}

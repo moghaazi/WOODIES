@@ -1,0 +1,122 @@
+@import './components/btn'; // Btn
+@import './components/headtext'; // Btn
+
+.about {
+  // Title
+  .title {
+    @extend %headtext;
+
+    // lg 992px
+    @media (max-width: 992px) {
+      transform: translateX(0rem);
+    }
+
+    h1::before {
+      right: -31.5rem;
+      width: 30rem;
+    }
+
+    h1::after {
+      content: 'ABOUT US';
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    // xl 992px
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    // Text
+    .text {
+      transform: translateY(-10rem);
+
+      h1 {
+        font: bolder 3.6rem 'Nunito', sans-serif;
+        color: #3e3f43;
+        width: 44.8rem;
+        margin-bottom: 1rem;
+
+        span {
+          font: normal 3.6rem 'Nunito', sans-serif;
+          color: #3e3f43;
+          width: 44.8rem;
+        }
+      }
+
+      p {
+        font: bold 2.4rem 'Nunito', sans-serif;
+        color: #000;
+        width: 44.8rem;
+      }
+    }
+
+    // Img
+    img {
+      // lg 992px
+      @media (max-width: 992px) {
+        margin-top: 50rem;
+      }
+    }
+  }
+}
+
+.about2 {
+  margin-top: -15rem;
+  margin-bottom: 17rem;
+
+  .grid {
+    display: grid;
+    grid-gap: 6rem;
+    padding: 0 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    // lg 992px
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    // md 768px
+    @media (max-width: 768px) {
+      place-items: start;
+    }
+
+    // Text
+    .text {
+      transform: translateY(10rem);
+
+      h1 {
+        font: bolder 3.6rem 'Nunito', sans-serif;
+        color: #000;
+        width: 64.8rem;
+        margin-bottom: 1rem;
+
+        span {
+          font: normal 3.6rem 'Nunito', sans-serif;
+          color: #111;
+          width: 44.8rem;
+        }
+      }
+
+      p {
+        font: bold 2.4rem 'Nunito', sans-serif;
+        color: #000;
+        width: 64.8rem;
+      }
+    }
+
+    // Img
+    img {
+      // lg 992px
+      @media (max-width: 992px) {
+        margin-top: 15rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.newsletter {
+  background-color: #8d8d8d07;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // lg 992px
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  // Text
+  .text {
+    h1 {
+      font: bold 1.8rem 'Nunito', sans-serif;
+      color: #000;
+    }
+
+    p {
+      font: normal 1.6rem 'Nunito', sans-serif;
+      color: #000;
+      width: 50rem;
+    }
+  }
+
+  // Form
+  form {
+    // Input
+    input {
+      all: inset;
+      background-color: transparent;
+      border: 1.5px solid #daa520;
+      border-radius: 3px 0 0 3px;
+      padding: 1rem 2rem;
+      width: 355px;
+      outline: none;
+      font: bold 1.6rem 'Nunito', sans-serif;
+      letter-spacing: 0.3px;
+
+      &::placeholder {
+        font: normal 1.6rem 'Nunito', sans-serif;
+        color: #afafaf;
+      }
+    }
+
+    // Btn
+    a {
+      all: unset;
+      padding: 1.1rem 2rem;
+      background-color: #daa520;
+      border-radius: 0 3px 3px 0;
+      color: white;
+      font: bold 1.6rem 'Nunito', sans-serif;
+      cursor: pointer;
+      transition: 0.1s;
+
+      // Hover
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

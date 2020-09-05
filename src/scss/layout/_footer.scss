@@ -1,0 +1,96 @@
+footer {
+  // height: 250px;
+  background-color: #8d8d8d07;
+  padding: 5rem;
+
+  // Grid
+  .grid {
+    border-top: 2px solid #0000003b;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 3rem;
+
+    // Logo
+    .logo-box {
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+
+        // Img
+        img {
+          margin-right: 1rem;
+        }
+
+        // Text
+        .text {
+          font: bold 2.4rem 'Nunito', sans-serif;
+          letter-spacing: 0.4rem;
+          color: #3e3f43;
+        }
+      }
+
+      p {
+        font: normal 1.4rem/3rem 'Nunito', sans-serif;
+        color: #8d8d8d;
+      }
+    }
+
+    // links
+    .links {
+      h3 {
+        font: bold 1.8rem 'Nunito', sans-serif;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        all: unset;
+        margin-left: -7px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          all: unset;
+          margin: 0.8rem;
+
+          a {
+            all: unset;
+            font: normal 1.4rem 'Nunito', sans-serif;
+            color: #8d8d8d;
+
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Copy Right
+  .copy-right {
+    transform: translateX(44%);
+    margin-bottom: 3rem;
+
+    h1 {
+      font: bold 1.5rem 'Nunito', sans-serif;
+      color: #8d8d8d;
+
+      a {
+        all: unset;
+        font: normal 1.4rem 'Nunito', sans-serif;
+        color: #8d8d8d;
+        font-style: italic;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

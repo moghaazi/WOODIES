@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    // --------------------------- fav Icon --------------------------
+    link(rel="shortcut icon" href="./assets/img/favIcon.png")
+    // --------------------------- SCSS --------------------------
+    link(rel="stylesheet" href="./scss/main.scss")
+    //- link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+
+
+    title WOODIES
+
+
+  body
+    .container
+      .shape
+      //- ======================= HEADER =======================================
+      header
+
+        .logo
+          img(src=`./assets/img/favIcon.png`)
+          .text WOODIES
+
+        nav 
+          ul
+            li: a.active(href="#") Home
+            li: a(href="#about") About Us 
+            li: a(href="#custom") How it works
+            li: a(href="#categories") Categories
+            li: a(href="#testimony") Testimony
+
+            li: a.btn(href="#newsletter") SIGN UP
+
+      .header-info
+        .grid
+
+          .text
+            h3 Are you looking for <span>woodden furniture</span> for your place?
+            p This is the Right Place
+            button Explore Furniture
+
+          img(src=`./assets/img/header.png`)
+
+      //- ======================= ABOUT =======================================
+      .about#about
+
+        .title
+          img(src=`./assets/img/iconTitle.png`)
+          h1 Who we are
+
+        .grid
+
+          img(src=`./assets/img/about.png`)
+
+          .text
+            h1 WOODIES <span>is the</span> home of modern wooden furniture
+            p the answer to your need for furniture with shapes, sizes and colors. 
+
+      .about2
+
+        .grid
+
+          .text
+            h1 <span>Customized furniture</span> made just for you 
+            p Get it easy to adjust furniture to the shape and size of your dwelling or business.
+
+          img(src=`./assets/img/about2.png`)
+
+
+      //- ======================= CUSTOM =======================================
+      .custom#custom
+
+        .title
+          img(src=`./assets/img/iconTitle.png`)
+          h1 How to custom
+
+        .grid
+
+          .icon-box
+            span 1
+            img(src=`./assets/icon/custom1.png`)
+            h3 Choose Design
+
+          .icon-box
+            span 2
+            img(src=`./assets/icon/custom2.png`)
+            h3 Area measuring
+
+          .icon-box
+            span 3
+            img(src=`./assets/icon/custom3.png`)
+            h3 Budgeting
+
+          .icon-box
+            span 4
+            img(src=`./assets/icon/custom4.png`)
+            h3 Production
+
+        a Get Personalized Now
+
+
+        //- ======================= CUSTOM =======================================
+      
+      //- ======================= CATEGORIES =======================================
+      .categories#categories
+
+        .title
+          img(src=`./assets/img/iconTitle.png`)
+          h1 What we have
+
+        .grid
+
+          .categorie-box
+            h3 Desk
+            img(src=`./assets/img/categorie1.png`)
+            a(href="#") Shop Now
+
+          .categorie-box.cy
+            h3 Chair
+            img(src=`./assets/img/categorie2.png`)
+            a(href="#") Shop Now
+
+          .categorie-box.cb
+            h3 Kitchenware
+            img(src=`./assets/img/categorie3.png`)
+            a(href="#") Shop Now
+
+          .categorie-box
+            h3 Book Shelf
+            img(src=`./assets/img/categorie4.png`)
+            a(href="#") Shop Now
+
+          .categorie-box.cy
+            h3 Electronics
+            img(src=`./assets/img/categorie5.png`)
+            a(href="#") Shop Now
+
+
+      //- ======================= TESTIMONY =======================================
+      .testimony#testimony
+
+        .title
+          img(src=`./assets/img/iconTitle.png`)
+          h1 What they say
+
+        .grid
+
+          .testimony-box: img(src=`./assets/img/testimony1.png`)
+          .testimony-box: img(src=`./assets/img/testimony2.png`)
+          //- .testimony-box: img(src=`./assets/img/testimony2.png`)
+
+          .testimony-slider
+
+            .stars: img(src=`./assets/img/testimony-slider-stars.png`)
+            h1 My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+            .person
+              .img-box: img(src=`./assets/img/testimony-slider-person.png`)
+              .text
+                h3 Sandra Dewi 
+                h3 Jakarta Selatan
+
+      
+    //- ======================= NEWSLETTER =======================================
+    .newsletter#newsletter
+
+      .text
+        h1 Subscribe to our newsletter
+        p A monthly digest of the new WOODIES products, hot offers, and resources.
+        
+      form
+        input(placeholder='Your email address')
+        a Subscribe
+
+
+    //- ======================= FOOTER =======================================
+    footer 
+
+      .grid
+
+        .logo-box
+          .logo
+            img(src=`./assets/img/favIcon.png`)
+            .text WOODIES
+          p (012) 8967453<br>woodies@gmail.com<br>Jakarta, Indonesia 
+
+        .links
+
+          h3 Product
+          ul
+            li: a(href="#") Furnitures
+            li: a(href="#") Packages
+            li: a(href="#") Services  
+
+        .links
+
+          h3 Product
+          ul
+            li: a(href="#") Furnitures
+            li: a(href="#") Packages
+            li: a(href="#") Services 
+
+        .links
+
+          h3 Resources
+          ul
+            li: a(href="#") Blog
+            li: a(href="#") FAQs
+            li: a(href="#") Contact Us  
+
+        .links
+
+          h3 Company
+          ul
+            li: a(href="#") About Us
+            li: a(href="#") Jobs
+            li: a(href="#") Our Team 
+
+        .links
+
+          h3 Follow Us
+          ul
+            li: a(href="#") Facebook
+            li: a(href="#") Instagram
+            li: a(href="#") Twitter
+
+      .copy-right: h1 Made by: 
+        a(href="https://github.com/moghaazi", target="_blank") Moghazi
+
+
+
+
+
+
+    // ----------------------------- Js ----------------------------
+    script(src="./main.js")

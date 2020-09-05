@@ -1,0 +1,98 @@
+@import './components/btn'; // Btn
+@import './components/headtext'; // headtext
+
+.custom {
+  margin-bottom: 20rem;
+
+  // Title
+  .title {
+    @extend %headtext;
+
+    // lg 992px
+    @media (max-width: 992px) {
+      transform: translateX(0rem);
+    }
+
+    h1 {
+      &::before {
+        content: '';
+        position: absolute;
+        right: -11.5rem;
+        top: 2rem;
+        height: 0.3rem;
+        width: 10rem;
+        background-color: #777;
+        border-radius: 5rem;
+      }
+
+      &::after {
+        content: 'HOW IT WORKS';
+      }
+    }
+  }
+
+  // Grid
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10rem;
+    padding: 1rem;
+    place-items: center;
+
+    // lg 992px
+    @media (max-width: 992px) {
+      margin-top: 55rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    // md 768px
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    // sm 576px
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    // Icon box
+    .icon-box {
+      margin-bottom: 4rem;
+
+      span {
+        font: bold 9.6rem 'Nunito', sans-serif;
+        color: #f9bdbd3f;
+        display: inline-block;
+        transform: translateX(1.5rem);
+      }
+
+      h3 {
+        font: bold 2.4rem 'Nunito', sans-serif;
+        color: #000;
+        transform: translateX(4rem);
+      }
+    }
+  }
+
+  // Btn
+  a {
+    @extend %btn;
+    display: inline-block;
+    transform: translateX(200%);
+
+    // lg 992px
+    @media (max-width: 992px) {
+      transform: translateX(140%);
+    }
+
+    // md 768px
+    @media (max-width: 768px) {
+      transform: translateX(120%);
+    }
+
+    // sm 576px
+    @media (max-width: 576px) {
+      transform: translateX(80%);
+    }
+  }
+}

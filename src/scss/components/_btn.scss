@@ -1,0 +1,14 @@
+%btn {
+  all: unset;
+  background-color: #daa520;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  color: white;
+  font: bold 1.6rem 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
